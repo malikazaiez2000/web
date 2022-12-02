@@ -1,0 +1,169 @@
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>E medical</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>Showcase.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="https://www.helpondemand.com/wp-content/uploads/2020/09/HOD-Blog-623x570-700x570.jpg" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
+      <img src="https://weare360.ie/wp-content/uploads/2020/01/37181520_s-700x570.jpg" style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
+      <img src="https://covicurefgh.com/wp-content/uploads/2021/02/840b9d68-6969-11eb-808c-718abf3c003b_1612718808084-700x570.jpg" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
+    </div>
+
+    <div class="w3-half">
+      <img src="http://mosaiqueguinee.com/wp-content/uploads/2020/12/0003-700x570.jpg" style="width:100%" onclick="onClick(this)" alt="Windows for the atrium">
+      <img src="https://blog.worthix.com/wp-content/uploads/2020/06/AdobeStock_338676529-resized-700x570-700x570.jpg" style="width:100%" onclick="onClick(this)" alt="Bedroom and office in one space">
+      <img src="https://medicover.hu/wp-content/uploads/2022/02/teljes-test-mr-vizsgalat-medicover-diagnosztika-700x600-1-700x570-1.jpg" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">&times;</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Services.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>​eMedical is an electronic health processing system that is used by clinic staff and medical professionals who have been empanelled by Home Affairs to record and submit the results of immigration medical examinations (IMEs).</p>
+    <p>eMedical removes the need to process paper-based health examination reports, and allows panel physicians to record a visa applicant's health information electronically. This includes their health examination results, digital chest x-rays, specialist reports, and biometric photographs.
+
+      Connect with a board-certified physician 24 hours a day with Your Doctors Online. Our app allows you to chat in real-time and send photos or videos with a professional and experienced doctor.
+
+Join our 300,000+ members today. Download our app & talk to a doctor online.
+    </p>
+  </div>
+  
+  <!-- Designers -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Our doctors.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>The best team in the world.</p>
+    <p>With the rising cost of healthcare, seeking medical advice in most parts of the world is becoming increasingly difficult. Your Doctors Online strives to make healthcare more accessible and affordable. Our online application provides you with a platform to connect with board-certified doctors round the clock from the comfort of your home. Below is a snippet of our doctor network.
+    </p>
+    <p><b>Our Doctors are thoughtfully chosen</b>:</p>
+  </div>
+
+  <!-- The Team -->
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOw57c41O6aJ8lzfAfrsy3Y3SWLWnSl3bAQw&usqp=CAU" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h3>John Doe</h3>
+          <p class="w3-opacity">CEO & Founder</p>
+          <p>Specializing in revision and ethnic rhinoplasty, Dr. Doe assists patients at Spalding Drive Cosmetic Surgery & Dermatology in Beverly Hills, California.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="https://www.cathobel.be/wp-content/uploads/2019/10/Steven-Laureys-dans-son-bureau_c-Nancy-Goethals-Cathobel_2019-500x333.jpg" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h3>Jane Doe</h3>
+          <p class="w3-opacity">INTERNAL MEDICINE</p>
+          <p>Senior Interventional Cardiologist at St Michael’s hospital with 20+ technology, research and business experience globally.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBYWFRgVFRYYGBgaHBwYGhgaGBgYGBgYGBgaGRkYGBgcIS4lHB4tHxgZJjgmKy8xNTU1GiQ7QDs0Py40NTEBDAwMEA8QHhISHjQhJSw0MTQ0NDQ0NDQ0MTQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDE0NDQxNDRAP//AABEIALcBEwMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAAEAAIDBQYBB//EAD8QAAIBAgQDBgQEBQMCBwEAAAECAAMRBBIhMQVBUQYiYXGBkRMyobFCUsHRFCNicvAVM+EkwjRDRFOCkvEW/8QAGQEAAwEBAQAAAAAAAAAAAAAAAQIDAAQF/8QAJxEAAgICAgEDAwUAAAAAAAAAAAECESExA0ESIjJRE2GBBCNCcZH/2gAMAwEAAhEDEQA/ADsHQ75BNrC1xzA5nruIXiGQ91F3BufTe0BpVjTfOQcvMHS4b/PpDKxb4oA1BHdtpyvvOKSblYrAKFQAhGB0/FzFuQheJxSju3vbW19bdYLjKLhizL5EaD2kYoADMDc2N/I/qDGaTyai8figKllFxYgi1gD4WlK+VrrYDfXrfUxtGsbZTuTaQ5wpy8uZmUXY1g+Ipe237QcrDqje3+coI5HpKxbCiFo20ifFIDq0aMan5pSjBIWOAgwxqfmhaG4vAEQE7adiAmYRAR4E4JC+MpqcpdQel4AhAEcBIUxCE2DqT0BBPtCBAFCEcI2OEUI9RHqI1ZIIGMjoEcBOCOEUYcojwIxY9RFYyOiPVYlWSqJNsZISrJFSJFkyrFbHSGBI8JHhI8JEsNEOSMdIVljXSGzUA5IoT8OKGwUU/EHa65xbMN+QPlLKviAtNHGpNgD0HOd4rw4kZgRYaXsdCP0lOlW6Ml72v5C3MfWdEUpJHnJVgPZ7o7MSwFytuRtt9ZTByEBB3J9oZgajZQrbEm9/KV9UDP3dthf9pSMatAsmpMSRf/LyXFU7d7W/+CRhyNee1uW85iK9x4E7eU1OzEbv/nSCVDoZJUeQtKJUMA8NwqOWLC5vDv4FPyiQcI3fzliSJQBW8RwaBCQoBhOD+RfKLif+2YsF8g8oshkTkQHimM+GtxudofaZ/FAVq5X8FPTzbn9dPSLjsNW6K6tjKr82t4GwgQQzWpgVItaJeDrtF+qkU+izKoD/AJ9pbYLi70zZ7kdPAch0l0ODjpJa/BUdMp9DzED5YsK4ZImw2LV1DKdPqDzBgr8VAYqFJt0ldwYslR6L78vMf8G/oZbcEohne45wTairEVt0Rjix/I3tHrxRt/htbyl0mEW8Kq4dQh22nM+droeitweJDqGHOT5hAOF/J6n7xcQchWI6S6VmssVcdZKrjqIFwvgOemrs7XIvvDV7Mp+d/cxHQVImRwecmUSt4lwUUUzo7XBG5JuI7G4400Vt9BJtXopGWC2VZMizPU+I1yLhPrCExeJ/9se8VxZRSRfKkkCSipcTrK6h0sCbXvNENpOSoNkeSNYTi4XOx7xEY/DSPxmZW8mYssUi/wBOP5zFD4gA24iwum4bXrv9rwRUUglVUcmHMcxaCYV3K3Pecm4A3AUWNx5R9eiyhlGgIVult9DOrxrB52dnFw1nykm+410taB17KRpre5lglYBbka2G/wBh7SuxzXysfmO48ORjxu8g7G57DTr5xtQ3sb685xWsIx2lEhhrRtp2dAjhBuFfO/nLP4cpaNco7XUm5hi8XsLZDCwEnFB/LMbgvkXygmLxxdCoQ6w3CKQgBisKJXfKCTsAT7ayh4OndzHdzc+ss+L1LUX11K29zb9YNw9QEXpYSc36SvGvUWmHh6KJTU+JIDa9vHlLWmQVJFjpeQaaOhO9BAElKwfMF1ZgBH4fFI5srAnpBTGTRn+O0MlenVXmQD9vsYbwNf5j+cg7TiwXzBHneE8EHfeNN/tnNyKpF5kj66goR4RiOeccoJDeRnG0LZScLsEt4mc4r8h8pHgNm/uP3neInuN5T0IrRrwazgifyE8h9odk0gXAWBoJboPtLEOBvJS2FMqO0LfyfUfeUPGm7i+kvO1NQCjcdR95muKV8yL6QxiOpKmXFMmyWJ2EvadI5RM5hq4sp8BNHhcRcCBom97BuKiyp/cPvDvi2Eq+0OICqh/qH3gtbiItoZGUG2dEJJIvsFXBJh72MyHCsf3m1h2N48qjePGDUaFlNNl5dZyZL/8AoB1HvFH8GHyRV0XVGcobNTI0BtlFwLn3tCv9Sa7K+uZWIAsSCRcDSB1sMtOs/RxqN7hjcGS8X4X8CstQkH4gvYbJcWufLSFy8jgTwI4tSmjXsPtvBvjlxr6QAVUQrludQGJ5m9mEJdlBIU89vA7f54SsVWzKSeicsOhkbGTYVTreQ4sZdtTKpDoSmPEEo0jmzE+kLEITuURZR0nZwmYx0KI4CRfHXqJ3+JT8wihBuKUcy26giNo4a6BfAX9OUnqVFcWDazmAfTy0kZ2i8KaAKqObAqgW/wCS5A5G8s+F3Btytbw18IW6C1zIcOt3FtBeK3Y8Y0xnF6BY6LceZ1IEkwGH7q5qeQ2uGF9D0O3677yzdbWDbyekp56wXSodrJWcZwYqZAxsoa7ctLHQetpBUxDo90QEWK+gOn6yxxyZ+4Da/P8AbxgD4hL2zDTT2mjHywxOWlH7sa/E6x/AI5OJ1wCMg1jf4lPzCdXEKdmEb6MPg5hmDRgve3JvOcQ+RvKEyOsgYWMoHo0HZWugordht1jONYxcwCuPeZhMEoFgWA8DONgFO5J9YtAyHcY4gDSyZgSSB9YBjz3B6Rf6clwdfedx1Mlco35Q4QQ/DsLL6TR4Zu6LTEq9YADLtDqfFK6i2SZpCUw7tbU7iC/4hM7WV7aEwjiOLqVMoZbAG8REFIeNoqXqVF+RmBM4lJ2+ZifOWFK7PlAkZqOCRl2gTd0kF12xowxEUX8W/wCWKNT+DeS+TQYlCcmfVgGAbqV1sfT7QXtHXf46oxuCBpta5hWMri1AgXBNz430v5xcdoh6iF9DbKGJtcchfrqfaRi/Ur+5z/xZmOKUcjWI5kjw8D9YXgKNyHPPlI8VSJJF8x7x87m4+94fgxoOu0607SJcadhqLYCPdAZ220R2jHQivIsY8RtUi+k6IAjoLxA9wwmQY4dxvKYxWUMKCoJJ94qWFBJuDJ8Ke4I9X1nHKcrZdRWAVKYSotpZ4cWY+Z+8Brf7iQhMWpdspuBYHztylUnKFi3UqCcbWIsAL9P3MZRZw2cKWPgQf1koqd7XkB9SZL8FbghRcnXcaekWOCid9k9NyASVYA3JuLAX3Ms8HUJBH19NIKKSBflF7ef3hNJwEB8P/wAgeR067K3jNdkRspsSN+YHh0guB4ajIpI1PjFxh7oxk3Dn7i+UtFUjmnK2HYHg1I/hgnaDAImQoLG4lxhK4AvKTtFiMxQeMWm5CEi7SqxjO1QIhtLUbSuX/wAQPKMthehn+n1/zx44dW/PLlolMe/sJn5KPh7vmZXN7SxwwvUUGV+H/wB1/OHYdrVFMnLZRaL3EquYKBDmwqldhKoMS4lshIhaoBl+LJYgW5wI7Sw4693Ermi9jLRDgz/NHrJXPePmZBhXtVEVesMzec0cS/AGPsIoP8UeM7K2haL3CKCqZ2FgSFN9s20g41iDnKEBiAGUnfQ8h6mT4bDEMAOZuL8rdIHjUIxne17gKnp6e85Y15f6SliNFRhXJbc2S9+ouba9RLqkLubQOthUS7Bgcx6879PaG8OU/MRuTadMWm7QvGEsdYk2nHOpnKGxlOiyBKlALe0asLte94KRrFCKRYodxvKSxlYd0+UUxX4M9ySHeRcKwzvdEQsRvsAPMnSaPA9ndA1U+ORT92/ac74pOTor5xSMvxIkAMNhpfxN7QzD4D4dKkxGrrnY/wB5OX2AAll2uwqWo0kIS/eCAfNmIW5I56fWXWOwd6QNtE7tv6DoPYzrjxqPGokHO5WZN2IIvy+ohdHFH8pt1AvIcThym4zJybmPAyKg+U6HSQaawy6d5RcrXuCApueZ0EILWXyGnnaVyYwcgT9JBWxjO6INATt4DWKlbpFNK2CVseHQowyvsR4g2Npa4AdxfKdwPBkxNXEhgQFYZWHJwLMfoYylSeg4oVCCG+SpsrdATyPnOyXEut/BxqXyFBjKvipOdPOWwp1MxUUnuNCLdOnX0lNxCvmdFswKnUEEEeclQ5aDaVv/AKgeUspT4qrkrqfCKjM0F5y8BTiXhONxLwjJMWwPDH+Y/nD8Kt6qiVeAfM7nqYcKmVwYj2Ujov2XLUHSXSjS/hMw/EUNjfUQhuNJlsGhdAK7jLXf1gFVtJLiqoZgQbyKpFew9AgJDKR1jm1ZvOOCgEeckbeLS8jJuiL4UUkvFD4o1midBcNqVuAD0udfqIHx6ioriorqCEsQNST/AFdJAnFsuYZSyk3KEG623KnrzhfFaaHvrbOUuepB1sfSc6TUiM36TM1Hu+VjvtpoLaj7fWaLDnur5CVLoMpZgM5AIPMA3sRaWuGUlAx5b9J1RkmCCE25kdB7EiSpqTBMUCLESw4VASdTCQecFYHNbrFGCsJhmqNlUeZOwl/heCIB3++fW3oIVw3BqihdzuT1MsxT5iMo0TcgKnhVQWVQB4bR+T22PgevlDGT2jQnsYwDzftbVK4inf8A8sLb/wC7N9p6GlNXW24IsfEMJ5929S1demQAeWZj/wB03PAMQHoUzrfIoOngJWa9KYi2ZzjVNqHcsGzGy32I6nxFvtK3EYDQMg15r+3Xym94pw5aqFT8w1U9DMgl1JVtGU2I8RIuKkslYycdFPTrixjMA4Q/Ge3MU1JtmtufAeMmxdMCrltcOQ1hva/eH0PvLLifCw6VGppmyJkQDzW9vZpPihUm2X5J3FUaPs9SVaHxBp8R2qePeY5R7W95FxXApWXI3MGxtqrbqfeH9m1YYRPiDIQALEjS2gufGG1KSsCvMg6jl43lXL1Wjn6M92YxrOuV/npko3XTY/T6SyqcKpVGLune2zDQ2H6yg4KHTGvdDlqLe9tM62vfodD7zZ0adr+s00m8GizGcV4Y9I33Tk32DdDKXEYRXIY7z0yphw4KMLgg38jpMJjcI1J2RuR0PUciJGUaeCidlSeHL1PvGnhy9T7w8zhi2w0DYbChL25yZlEfGmAJGUHSNNMdJIY0mYwzKBExiYxjGYAxomaOo08zAQDH1spyjrBFXKjPEbCs46zsp856xS/0iXmbbjdIogdSCxNjYajoT52ldj1Oam4GrKqkdCALX89vSWNZSKdnsbXF9SSubQN/V4+EVeqrKBfKSpFiNCd7g+31nCmCeShruzO2XQX6eO3/ABL/AApDIBa3UftaUqVkD5ALOBZiPlLAa6ekucO1jZdtD031lOzcZxKJViDzkOJTut4QxG0c2seX+GQZLoZeMhwHDvdRLDhWFD1Cx1yi4HjeVVDQeUv+B7k8tB948dml7TQUV0hSCRU1k6yhFEiSJRuOh+h1iDWbz/SK/fPjb7TUNZj+3PDkdkd6i0wAQSRe5BBAHjvLjsfUQ0gqNmC91SRa4B6df2gPb+jmw9/ysD76frBuwb3pHqrm/kwBH1vKNNwsW8m4yzOdpsDZlrLse6/nyJ+3tNFTfaLF4YOjI2zAjy6EeRsfSSWBzz6phmAD5dTcITyGl/rb2mm4Xgv+nYc27t/Tf3JlW6tmKNcZCVtyFuk1WCp5aSjna/qdf1jPRjvDhemoPSdQatblp+8ZgzZLDxt6Ex6CwtEowC6Zaqm2hDH9f+6Hg3B9IHxB8uVv7h7qf2hFL/PoIaNYUgsLc+Z5CUXazC5qYdfwHU9Q2n3tLcnl7nrE4DqVYXUi1ut4GrGizzczhk+NwrU3KNa4texuNQD+sGJkGUETORXjSZgnTGEzpMaTMA4ZGxjiZE5mMKg/eEqsabuZYI2srKxuxjQ9/wCBZ+0ZFFFOk5zf4qpf4gC22Nj+JTzFuesrKlAgobAaeN9/rC1dy2V75hca77b+U5i8YihDUz3OgYC4UDleeXFNMrJYYJj+GhaqlTfORfTXXvDUeRF/KXaYVV75Itvtrp+kBwVUOwTMSdRqLW0LKdZcByECkd7wtf6xfN3TNHQIlIMrXsbt+w294LUIDZPSHoFy5mB19wYLiACbi2m3jOiEhyktYt5zScEXuC4t49ZSY9spIIsbXE0nCqgdEI00Gk6uPLEm8FvR0hAWQrJkvKMmMriwvI83eHisJqJcSvTTKOjEeh1EwWDdoaavSZGNs2mm/pAuz+GSkQEXKGup1Nzly2LX0O8I485GUWBB59DKjjGIpLgmQo71XNkKGxDmwU+XdgtrBkjbU+Y6SZH5GV/Cg4poH+cKoY8ybDUww7wNBKXjuFtUVhtUsp/uBA+o+xl3VOVL9B9hGYimHyg/hYMPNTIsfV7rDkBY+pA/WF5NY3BCyi/SSPUCgkkADck2Av4zqLylXxmgDTKFrhnU62GgIBHvClbSYspUm0TcTcZCd7AEe4k9BwbEH8IlJwPBgI2Y5gSBu2pAvfU6bjbpLDCjI7pyuLeR1H3t6QUM66LFZIr2295Ffl6mdUwUZMou0vCwVNdfmFi4/pAtm89pk56YUDAqRmBBDaaW8ZieOcFeic471MmwPNb7Bv3kpR7KxZTkxpMRM4ZMYRMaxiMYTMY4TInMc0iqNCAiZpXsdTJMRiMpt1g1Fib3jwXqElolvFFFOgiekZldmsCzAbgWtyy3ibhIZMrd3XblbcAwrDhAzMhIvuLWNz1vC6jAAX0vobi/lPI8n0W+TIYbDgVc4fYgFdypU7EdLTS1TTL3IANt+the0rcfhUVDZbOzCzKSSSN7j3kmBw7bsWFyLjlbqPpA42/IKRP/ABKCwAHvf18YC3EVuVtqNuksOJ0bqzIp0BACjx5TKcOw1YP3wVvcDNqSOkpDLd6N/QuK4li4uBblfn5TWcJS1JP7RMxjcJqrAZrEEA8tftNfwxe4Li2g0ndwtMnJlnSNwDJ0aQU+knWXaEH3I8YBjRlOYbEr6G5H6yyUwHiaWUkbEj0NxAhuhzIrizAEeMS4ZBsJBRrQgVBM0KSrpaSvygoqSZqmgmoI4mcFMEG/OdUiLOIKMA18UyEAqTc2uBe+h6bTJVOKYiqHp/AYCnmKucwDFXzAWZRe4Glps6qFiD0v9rTnwL6GFYdgatNGT4J2gR0yMhpsgGYsTZiRa4vqNtrS1wuNV3uut7WI1vYy5FIDYD2nVooNci36gAGYZaoYisdZKoPSS/CjlWAwqdxKrtbm/hmtp3lzeIv+9pcLKjtWl8OeXeX7xJaY8dnn5MaTCzh16xpw46zmKgt4wmFNhx1jDhh1hMCNB6plg2GHWDV8MOsKZjK42qc+8Kwp0Mbi+HnMWvIqdUjSWi1ZKSwH2ika1lilLRPxZ63h6ul3VQxOtrWB6L7SapVDAg5jl3FvrGYWkCrAqDsQdwbdITSS7htrjUfQieZxV4lLIDhlyqVHeHeHXeFLSW5Oo0B9OdpKpKtlIFuRG9uhjXUFwoNhvHuwio007xB0PQ6e0pscg1CrqNb7+svPgIpOv/MzvFcUiEEuF19wdNRFawYqqramw8B589JouHkmmlxrlF/O2szLYgGqSxOUjl8pPW/LcG00XCGvTXW9tLzo/TJqTsE16bLVbiSo0hUyRDO2iNkykSPH4dnQqjC+m97aG8eJIIKGRh8biqqMUbuketxyPlBl41UH4r+k2vEuGU662de9YhXHzL5dfKYxuz7pdXNiCbdGAO4kZuSd2dEfGS0NbtJVH4VPob/eaXAn4lNHYt3hewJAF+WkoP4JEG1z1j6/aZMMiJ8JqpIJN6mQLY2tYISdgb3G8WM29glBdI1/DSuqbZbWH9JH73hLoAdph+GdpxUrU3CCmAXSoAzMMjhCpu25BF+W3jN62srF2SlFohInEGscUnCCI9CivY3j2X2jV1kgMzMjrC8bmI3j40xRhymVPah/+nYdWUfW/wCksbTP9scSMiJfUksfICw+pPtEloaOzLGcMaWjSZz0VHGMM4WnCYaMcaDVhJnaQuZkgFVxBsqmUgMu+JpddJRMZWOhJCzxRsUYx7XwFxlzE2F9V1I1sLjpDBiFLZRcWJH1iinFFIJFSxBYkE/LsecIFUEWO/WKKCGUKxVGCtfU6aDlMZ2ku9RFKgk30FgNQbGKKXjsPQDhs1mzDXYC+gOgJ9hNL2drXTKeRI9N/wBYopXi94eT2GhTaSqYop1HKSoCZLYCKKKMhytz9pBjMOrrZwTbUWJBB8DFFBSKIzeL4bUvZCGH9VgQPTeUHEeztWo2bOmUdAQRfmb7xRTR4o3oz5ZVsZguzlRCSHBU2Ntgbdb6iehcBqlqKht1up/+O30tOxRpRSWBbbDSs5liiiGOWjTVUbn6RRTBR0VhynPiRRRRgTifEVopne5v8qjn4X5TBY3HNVcu252HIAbARRSU9jRB805eKKTQ5wmMJiimMRMZGxiihMCV+czmJHeMUUaOxWEUqGgnIoo4D//Z" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h3>Mike Ross</h3>
+          <p class="w3-opacity">OBGYN</p>
+          <p>Dr Ross has been a practising OB/GYN for almost 20 years. She graduated from the Boston School of Medicine and completed her residency at the University of Colorado. Dr. Killoran understands the importance of wellness. She credits surviving breast cancer with her renewed focus on her own health. Along with a busy obstetrics practice, she is also a health coach and recently completed the Ironman Half Triathalon. She lives happily with her family in Maine and connects with women around the world via her blog and her work with Your Doctors Online..</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Packages / Pricing Tables -->
+  <div class="w3-container" id="packages" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Packages.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>At Your E-Medical, we aim to provide affordable and easily accessible virtual health care for women and their families round the clock with the help of our board-certified online doctors.
+      We believe that everyone in the world should have the ability to connect with an experienced doctor online.</p>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-half w3-margin-bottom">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
+        <li class="w3-padding-16">
+          Consultation with a general physician 24/7</li>
+        <li class="w3-padding-16">E- prescriptions</li>
+        <li class="w3-padding-16">Referral to OB/GYN and pediatrician for US patients</li>
+        
+        <li class="w3-padding-16">
+          <h2>$ 199</h2>
+          <span class="w3-opacity"></span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+        
+    <div class="w3-half">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-red w3-xlarge w3-padding-32">Pro</li>
+        <li class="w3-padding-16">
+          Consultation with a general physician 24/7</li>
+        <li class="w3-padding-16">E- prescriptions</li>
+        <li class="w3-padding-16">Referral to OB/GYN and pediatrician for US patients</li>
+        <li class="w3-padding-16">Audio / video consultation</li>
+        <li class="w3-padding-16">Medication reminders</li>
+        <li class="w3-padding-16">Follow ups</li>
+        <li class="w3-padding-16">
+          <h2>$ 249</h2>
+          <span class="w3-opacity"></span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-red w3-padding-large w3-hover-black">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Contact.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!</p>
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send Message</button>
+    </form>  
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
